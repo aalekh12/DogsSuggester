@@ -31,6 +31,7 @@ class MainActivity : AppCompatActivity() {
         createdata()
     }
 
+    //Fetching Data from viewmodal
     @ExperimentalPagingApi
     private fun createdata() {
         val mainviewmodal = ViewModelProvider(this).get(MainViewModel::class.java)
@@ -46,6 +47,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    //Initializing RecyclerView
     private fun initRecyclerView() {
         binding.recyclerView.apply {
             layoutManager = LinearLayoutManager(this@MainActivity)
